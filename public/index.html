@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的股票篩選器</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js 圖表庫 -->
+</head>
+<body>
+    <header>
+        <h1>股票篩選器</h1>
+    </header>
+    <main>
+        <section id="screener">
+            <h2>篩選條件</h2>
+            <input type="text" id="stockSymbol" placeholder="輸入股票代碼 (如 AAPL)">
+            <button onclick="screenStock()">篩選</button>
+        </section>
+        <section id="chart">
+            <canvas id="stockChart"></canvas>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
